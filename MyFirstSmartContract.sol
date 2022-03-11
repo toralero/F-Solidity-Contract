@@ -39,7 +39,7 @@ contract BankDeposit {
   }
 
 
-  address public myAddress = 0XA0B54D5DC17eAad43B91238dc92;
+  //address public myAddress = 0XA0B54D5DC17eAad43B91238dc92;
 
 
   struct AccountHolder {
@@ -51,7 +51,7 @@ contract BankDeposit {
   AccountHolder public Rodrigo = AccountHolder("Rodrigo Reis", 1, 5);
 
   function GetAccountHolder(uint ID) public returns (uint) {
-    return AccountHolder.Rodrigo;
+    return Rodrigo.ID;
   }
 
 }
