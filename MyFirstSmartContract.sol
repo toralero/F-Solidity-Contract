@@ -20,7 +20,7 @@ contract MyContract {
 }
 
 
-contract BankDeposit {
+contract CreateUser {
   //State variables - it is stored on the blockchain, is it accesible inside the contract and if public modifier is applied also outside
   uint public myUint = 2;
 
