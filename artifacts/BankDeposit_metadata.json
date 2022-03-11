@@ -8,43 +8,20 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "ID",
-						"type": "uint256"
+						"internalType": "string",
+						"name": "_username",
+						"type": "string"
 					}
 				],
-				"name": "GetAccountHolder",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "Rodrigo",
+				"name": "createUser",
 				"outputs": [
 					{
 						"internalType": "string",
-						"name": "Username",
+						"name": "",
 						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "ID",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "AccountBalance",
-						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -141,10 +118,10 @@
 	},
 	"sources": {
 		"Solidity_Code/MyFirstSmartContract.sol": {
-			"keccak256": "0xe78462b145670b854ad95ec7b8dd33081cc4a826c7e030eafd9aff00d89b4acb",
+			"keccak256": "0x453fec086e4c2aeea6cb523b8febb9abcee8f510df7628adebcaa742f470fda9",
 			"urls": [
-				"bzz-raw://b7d3d5512081ca391b30c6ae7ef1ea2dced1785f432476735dd027e7c11f286c",
-				"dweb:/ipfs/Qmd7c1Y2b6AHcT1R2wTjBEZriqKzfnytkq997y2eeuYWCC"
+				"bzz-raw://22951d8990ae4b1a20876810549662f67d9ea8a98b97355dea6c22d1bc197226",
+				"dweb:/ipfs/QmStTgvmpQzwqeo8MtitLF7SJoDLCBXMCeF2vnrZgEyR3s"
 			]
 		}
 	},

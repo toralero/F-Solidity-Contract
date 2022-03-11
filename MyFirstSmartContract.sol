@@ -42,24 +42,20 @@ contract BankDeposit {
   //address public myAddress = 0XA0B54D5DC17eAad43B91238dc92;
 
   //define a new strut
-  struct AccountHolder {
-    address addr;
+  struct User {
     string Username;
-    uint ID;
-    uint AccountBalance;
+
   }
+
+  User[] users;
 
   //creating a new instance of a new struct
-  function createAccount(string   _username, uint  _ID, uint  _accountbalance) internal {
-    AccountHolder memory user1 = AccountHolder(msg.sender, _username, 1, 5);
+  function createUser(string calldata _username) external returns(string memory){
+    User memory user1 = User(_username);
+    users.push(user1);
+    User storage user = users[0];
+    return user.Username;
   }
 
 
- /* AccountHolders public Rodrigo = AccountHolder("Rodrigo Reis", 1, 5);
-
-  function GetAccountHolder(uint ID) public returns (uint) {
-    Rodrigo.ID;
-    Rodrigo.AccountBalance;
-  }
-  */
 }
