@@ -35,7 +35,7 @@ contract BankDeposit {
   //Local variables - value is only local to this function
   function getValue() public returns(uint){
     uint value = 2;
-    return value;
+    value;
   }
 
 
@@ -51,7 +51,7 @@ contract BankDeposit {
   AccountHolder public Rodrigo = AccountHolder("Rodrigo Reis", 1, 5);
 
   function GetAccountHolder(uint ID) public returns (uint) {
-    return Rodrigo.ID;
+    Rodrigo.ID;
   }
 
 }
