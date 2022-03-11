@@ -50,7 +50,7 @@ contract BankDeposit {
   }
 
   //creating a new instance of a new struct
-  function createAccount(string  calldata _username, uint calldata _ID, uint calldata _accountbalance) external {
+  function createAccount(string   _username, uint  _ID, uint  _accountbalance) external {
     AccountHolder memory user1 = AccountHolder(msg.sender, _username, 1, 5);
   }
 
