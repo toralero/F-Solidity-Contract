@@ -20,8 +20,38 @@ contract MyContract {
 }
 
 
-
-
 contract BankDeposit {
+  //State variables - it is stored on the blockchain, is it accesible inside the contract and if public modifier is applied also outside
+  uint public myUint = 2;
+
+  // uint == uint256; uint defaults to 256 the two are interchangeable
+  uint8 public myUint8 = 1;
+  uint256 public myUint256 = 1000000000000000;
+
+
+  string public myString = "Helo, World!";
+
+
+  //Local variables - value is only local to this function
+  function getValue() public returns(uint){
+    uint value = 2;
+    return value;
+  }
+
+
+  address public myAddress = 0XA0B54D5DC17eAad43B91238dc92;
+
+
+  struct AccountHolder {
+    string Username;
+    uint ID;
+    uint AccountBalance;
+  }
+
+  AccountHolder public Rodrigo = AccountHolder("Rodrigo Reis", 1, 5);
+
+  function GetAccountHolder(uint ID) public returns (uint) {
+    return AccountHolder.Rodrigo;
+  }
 
 }
