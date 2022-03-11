@@ -52,6 +52,7 @@ contract BankDeposit {
 
   function GetAccountHolder(uint ID) public returns (uint) {
     Rodrigo.ID;
+    Rodrigo.AccountBalance;
   }
 
 }
