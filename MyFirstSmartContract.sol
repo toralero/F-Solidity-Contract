@@ -26,36 +26,39 @@ contract CreateUser {
 
   // uint == uint256; uint defaults to 256 the two are interchangeable
   uint8 public myUint8 = 1;
-  uint256 public myUint256 = 1000000000000000;
+  uint256 public myUint256 = 100000000000;
 
 
   string public myString = "Helo, World!";
 
 
-  //Local variables - value is only local to this function
-  function getValue() public returns(uint){
-    uint value = 2;
-    value;
+  uint[] public uintArray = [1,10];
+
+  function getArrayValuebyIndex(uint _index) public view returns(uint) {
+    return uintArray[_index];
   }
-
-
-  //address public myAddress = 0XA0B54D5DC17eAad43B91238dc92;
 
   //define a new strut
   struct User {
     string Username;
+    uint ID;
 
   }
 
+  //Array of Structs
   User[] users;
 
+  //Local variables - value is only local to this function
   //creating a new instance of a new struct
-  function createUser(string calldata _username) external returns(string memory){
-    User memory user1 = User(_username);
+  function createUser(string calldata _username, uint _ID) external returns(string memory) {
+    User memory user1 = User(_username, _ID);
     users.push(user1);
     User storage user = users[0];
     return user.Username;
   }
+
+
+  //address public myAddress = 0XA0B54D5DC17eAad43B91238dc92;
 
 
 }
